@@ -1,0 +1,16 @@
+services:
+  cloud-data-pipeline:
+    build: . # Mevcut dizindeki Dockerfile'ı kullanarak imaj oluşturur.
+    env_file:
+      - .env # Ortam değişkenlerini bu dosyadan okur.
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db # Veritabanı servisinin başlamasını bekler.
+
+  db:
+    image: postgres:13
+    env_file:
+      - .env # Veritabanı için gerekli POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB değişkenlerini okur.
+    ports:
+      - "5432:5432"

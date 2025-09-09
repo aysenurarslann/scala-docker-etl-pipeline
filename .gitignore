@@ -1,0 +1,14 @@
+# Ortam değişkenleri dosyasını yoksay
+.env
+
+# Scala/sbt tarafından oluşturulan dosyalar
+/project/project/
+/project/target/
+/target/
+
+# IDE ve editör özel dosyaları
+.bloop/
+.metals/
+.idea/
+.vscode/
+*.DS_Store
