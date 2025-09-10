@@ -17,11 +17,5 @@ Bu projenin temel amacı, modern veri mühendisliğinde kullanılan temel konsep
 - Docker
 - Docker Compose (Genellikle Docker Desktop ile birlikte gelir)
 
-## Başlangıç
-
-Projeyi çalıştırmak için aşağıdaki adımları izleyin.
-
-### 1. `.env` Dosyasını Oluşturun
-Projenin ana dizininde `.env` adında bir dosya oluşturun ve aşağıdaki içeriği ekleyin. Bu dosya, veritabanı ve uygulama konteynerleri için gerekli ortam değişkenlerini içerir.
 
 ```
